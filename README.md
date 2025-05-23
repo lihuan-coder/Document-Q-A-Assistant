@@ -127,8 +127,8 @@ pip install gunicorn
 gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker
 ```
 ## 贡献者
-<a href="https://github.com/eryajf/learn-github/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=eryajf/learn-github" />
+<a href="https://github.com/lihuan-coder/Document_QA_Assistant/graphs/contributors">
+  <img src="https://github.com/lihuan-coder/Document_QA_Assistant" />
 </a>
 
 ## 📄 License
