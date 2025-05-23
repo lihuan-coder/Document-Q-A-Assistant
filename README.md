@@ -60,7 +60,7 @@ A modern, intelligent document Q&A system that provides accurate answers by sear
 
 2. **Configure API Key**
    ```bash
-   # Create .env file
+   # You can create .env file
    echo "QWEN_API_KEY=your-actual-api-key-here" > .env
    ```
 
