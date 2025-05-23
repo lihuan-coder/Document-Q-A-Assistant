@@ -1,0 +1,205 @@
+/* 自定义样式 */
+.loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+.loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 响应式设计 */
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .max-w-3xl {
+        margin: 0 1rem;
+    }
+}
+
+/* 自定义动画 */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 美化滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* 流式输出和Markdown格式相关样式 */
+.result-box {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 20px !important;
+}
+
+.result-box h2 {
+    color: #2563eb;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.result-box h3 {
+    color: #3b82f6;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.result-box p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    color: #334155;
+}
+
+.result-box ul, .result-box ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.result-box li {
+    margin-bottom: 0.5rem;
+}
+
+.result-box pre {
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+}
+
+.result-box code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #3b82f6;
+    background: #f1f5f9;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.25rem;
+}
+
+.result-box pre code {
+    background: transparent;
+    padding: 0;
+    color: #334155;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.result-box blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+    color: #64748b;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.result-box table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.result-box th, .result-box td {
+    border: 1px solid #e2e8f0;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.result-box th {
+    background-color: #f8fafc;
+    font-weight: 600;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    background-color: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #b91c1c;
+}
+
+.error-message svg {
+    margin-right: 0.5rem;
+}
+
+/* 回答生成时的光标闪烁效果 */
+.typing-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: #3b82f6;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* 代码块语法高亮 */
+.hljs {
+    background: #f8fafc !important;
+    padding: 0 !important;
+} 

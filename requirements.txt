@@ -1,0 +1,40 @@
+# 智能文档问答系统依赖包
+# Author: AI Assistant
+# Version: 2.0.0
+
+# Web框架
+fastapi==0.104.1          # 现代、快速的Web框架
+uvicorn==0.24.0           # ASGI服务器
+
+# 模板引擎
+jinja2==3.1.2             # 模板引擎
+
+# 文档处理
+python-docx==0.8.11       # Word文档处理库
+
+# 中文分词
+jieba==0.42.1             # 中文分词工具
+
+# AI模型接口
+dashscope==1.14.1         # 阿里云千问模型SDK
+
+# 环境配置
+python-dotenv==1.0.0      # 环境变量管理
+
+# WebSocket支持（FastAPI已包含）
+# websockets已包含在fastapi中
+
+# 可选：性能和监控
+# psutil==5.9.6           # 系统资源监控
+# aiofiles==23.2.1        # 异步文件操作
+
+# 可选：日志和调试
+# loguru==0.7.2           # 更好的日志库
+# rich==13.7.0            # 终端输出美化
+
+# 开发工具（可选）
+# pytest==7.4.3          # 测试框架
+# black==23.11.0          # 代码格式化
+# flake8==6.1.0           # 代码检查
+
+pywin32 
