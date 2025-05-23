@@ -50,7 +50,7 @@ A modern, intelligent document Q&A system that provides accurate answers by sear
 
 1. **Clone and Setup**
    ```bash
-   git clone <repository-url>
+   download file
    cd Intelligent Document Q&A Assistant
    python -m venv venv
    source venv/bin/activate  # Linux/macOS
@@ -64,13 +64,7 @@ A modern, intelligent document Q&A system that provides accurate answers by sear
    echo "QWEN_API_KEY=your-actual-api-key-here" > .env
    ```
 
-3. **Add Documents**
-   ```bash
-   # Place .docx files in data/ folder
-   cp your-documents.docx data/
-   ```
-
-4. **Run Application**
+3. **Run Application**
    ```bash
    python main.py
    # Visit http://localhost:8000
