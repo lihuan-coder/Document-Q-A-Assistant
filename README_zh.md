@@ -51,7 +51,7 @@
 
 1. **克隆项目并安装**
    ```bash
-   git clone <repository-url>
+   下载项目文件
    cd Intelligent Document Q&A Assistant
    python -m venv venv
    source venv/bin/activate  # Linux/macOS
@@ -69,8 +69,7 @@
 
 3. **添加文档**
    ```bash
-   # 将.docx文件放入data/文件夹
-   cp 你的文档.docx data/
+   将.docx文件放入data/文件夹
    ```
 
 4. **运行应用**
