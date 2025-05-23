@@ -126,10 +126,12 @@ docker run -p 8000:8000 -v ./data:/app/data -e QWEN_API_KEY=your-key smart-qa-sy
 pip install gunicorn
 gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker
 ```
-## Contributor
+
+## 💻 Contributor
 <a href="https://github.com/lihuan-coder/Document_QA_Assistant/graphs/contributors">
-  <img src="https://github.com/lihuan-coder/Document_QA_Assistant" />
+  <img src="https://contrib.rocks/image?repo=lihuan-coder/Document_QA_Assistant" />
 </a>
+
 
 ## 📄 License
 
